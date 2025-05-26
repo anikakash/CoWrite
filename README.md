@@ -1,12 +1,51 @@
-# React + Vite
+# Blonix - Blog Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Blonix is a modern blog platform built with React and Vite that uses json-server for backend data management.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- Vite
+- Styled Components
+- Ant Design
+- Axios
+- JSON Server (mock backend)
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+Start the development server:
+```bash
+npm run dev
+```
+
+Start the JSON server (in a separate terminal):
+```bash
+npm run server
+```
+
+The development server will run at http://localhost:5173 (or another port if 5173 is busy)
+The JSON server will run at http://localhost:8000
+
+## Data Structure
+
+The application uses the following data models:
+
+- **Users**: Blog authors and their profile information
+- **Articles**: Blog posts with content, tags, and metadata
+- **Comments**: User comments on articles
+
+## Features
+
+- Browse articles by different categories and tags
+- View user profiles and their published articles
+- Comment on articles
+- Sort and filter articles by various criteria
+- Responsive design for all devices
