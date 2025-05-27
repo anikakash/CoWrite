@@ -1,35 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import styled from "styled-components";
+import NabBar from "./Components/NabBar";
+import UserList from "./Components/UserList";
+import { Flex } from "antd";
+
+const Container = styled.div`
+  width: 90%;
+  /* height: 100vh; */
+  background-color: #ecf4fa;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 2px solid #abc6e2;
+  box-shadow: #abc6e2;
+`;
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Container>
+      <NabBar />
+      <UserList />
+      {/* <Flex gap="small" justify="space-around">
+        <div style={{ background: "lightblue", padding: "10px" }}>Box 1</div>
+        <div style={{ background: "lightgreen", padding: "10px" }}>Box 2</div>
+        <div style={{ background: "lightcoral", padding: "10px" }}>Box 3</div>
+      </Flex> */}
+    </Container>
+  );
 }
 
-export default App
+export default App;

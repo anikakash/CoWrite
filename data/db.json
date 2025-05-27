@@ -1,0 +1,2018 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "Anik",
+            "avatar": "https://i.pravatar.cc/150?img=1",
+            "numberOfArticles": 5,
+            "stack": [
+                "JavaScript",
+                "React",
+                "Node.js"
+            ],
+            "bio": "Anik is a software developer with a passion for building web applications. He loves working with JavaScript and has experience in both front-end and back-end development."
+        },
+        {
+            "id": 2,
+            "name": "Sadia",
+            "avatar": "https://i.pravatar.cc/150?img=2",
+            "numberOfArticles": 3,
+            "stack": [
+                "Python",
+                "Django",
+                "PostgreSQL"
+            ],
+            "bio": "Sadia is a backend developer focusing on Django applications. She enjoys solving complex logic problems and working with databases."
+        },
+        {
+            "id": 3,
+            "name": "Rafi",
+            "avatar": "https://i.pravatar.cc/150?img=3",
+            "numberOfArticles": 7,
+            "stack": [
+                "Vue.js",
+                "JavaScript",
+                "Firebase"
+            ],
+            "bio": "Rafi specializes in building fast and responsive frontend apps using Vue.js and Firebase."
+        },
+        {
+            "id": 4,
+            "name": "Mim",
+            "avatar": "https://i.pravatar.cc/150?img=4",
+            "numberOfArticles": 6,
+            "stack": [
+                "Java",
+                "Spring Boot",
+                "MySQL"
+            ],
+            "bio": "Mim is a backend engineer with expertise in Java and Spring Boot, building scalable RESTful services."
+        },
+        {
+            "id": 5,
+            "name": "Tariq",
+            "avatar": "https://i.pravatar.cc/150?img=5",
+            "numberOfArticles": 2,
+            "stack": [
+                "PHP",
+                "Laravel",
+                "MySQL"
+            ],
+            "bio": "Tariq enjoys building full-stack web applications using Laravel and managing MySQL databases efficiently."
+        },
+        {
+            "id": 6,
+            "name": "Nusrat",
+            "avatar": "https://i.pravatar.cc/150?img=6",
+            "numberOfArticles": 4,
+            "stack": [
+                "C#",
+                ".NET",
+                "Azure"
+            ],
+            "bio": "Nusrat is experienced in enterprise-level software development using C# and Azure cloud services."
+        },
+        {
+            "id": 7,
+            "name": "Hasib",
+            "avatar": "https://i.pravatar.cc/150?img=7",
+            "numberOfArticles": 8,
+            "stack": [
+                "JavaScript",
+                "Next.js",
+                "MongoDB"
+            ],
+            "bio": "Hasib works as a full-stack developer with a strong grip on Next.js and MongoDB."
+        },
+        {
+            "id": 8,
+            "name": "Sanjida",
+            "avatar": "https://i.pravatar.cc/150?img=8",
+            "numberOfArticles": 1,
+            "stack": [
+                "HTML",
+                "CSS",
+                "Bootstrap"
+            ],
+            "bio": "Sanjida creates beautiful static websites and loves clean and responsive design."
+        },
+        {
+            "id": 9,
+            "name": "Rahat",
+            "avatar": "https://i.pravatar.cc/150?img=9",
+            "numberOfArticles": 9,
+            "stack": [
+                "TypeScript",
+                "React",
+                "Redux"
+            ],
+            "bio": "Rahat enjoys writing scalable frontends with TypeScript and React."
+        },
+        {
+            "id": 10,
+            "name": "Fatema",
+            "avatar": "https://i.pravatar.cc/150?img=10",
+            "numberOfArticles": 2,
+            "stack": [
+                "Ruby",
+                "Rails",
+                "PostgreSQL"
+            ],
+            "bio": "Fatema loves rapid development using Ruby on Rails and believes in writing clean, testable code."
+        },
+        {
+            "id": 11,
+            "name": "Sohan",
+            "avatar": "https://i.pravatar.cc/150?img=11",
+            "numberOfArticles": 5,
+            "stack": [
+                "Go",
+                "Docker",
+                "Kubernetes"
+            ],
+            "bio": "Sohan is a backend systems developer passionate about building scalable infrastructure with Go and Kubernetes."
+        },
+        {
+            "id": 12,
+            "name": "Elma",
+            "avatar": "https://i.pravatar.cc/150?img=12",
+            "numberOfArticles": 6,
+            "stack": [
+                "JavaScript",
+                "Angular",
+                "RxJS"
+            ],
+            "bio": "Elma is a frontend developer skilled in Angular and state management with RxJS."
+        },
+        {
+            "id": 13,
+            "name": "Shuvo",
+            "avatar": "https://i.pravatar.cc/150?img=13",
+            "numberOfArticles": 3,
+            "stack": [
+                "Python",
+                "Flask",
+                "SQLite"
+            ],
+            "bio": "Shuvo builds lightweight APIs and enjoys working on small and fast microservices."
+        },
+        {
+            "id": 14,
+            "name": "Priya",
+            "avatar": "https://i.pravatar.cc/150?img=14",
+            "numberOfArticles": 4,
+            "stack": [
+                "React",
+                "GraphQL",
+                "Apollo"
+            ],
+            "bio": "Priya is passionate about frontend development and using GraphQL to simplify data fetching."
+        },
+        {
+            "id": 15,
+            "name": "Asif",
+            "avatar": "https://i.pravatar.cc/150?img=15",
+            "numberOfArticles": 6,
+            "stack": [
+                "Node.js",
+                "Express",
+                "Redis"
+            ],
+            "bio": "Asif designs efficient backend systems using Node.js, Express, and caching with Redis."
+        },
+        {
+            "id": 16,
+            "name": "Nadia",
+            "avatar": "https://i.pravatar.cc/150?img=16",
+            "numberOfArticles": 3,
+            "stack": [
+                "HTML",
+                "SCSS",
+                "Figma"
+            ],
+            "bio": "Nadia focuses on UI/UX design and front-end development, with a flair for visuals."
+        },
+        {
+            "id": 17,
+            "name": "Jamil",
+            "avatar": "https://i.pravatar.cc/150?img=17",
+            "numberOfArticles": 7,
+            "stack": [
+                "Java",
+                "Android",
+                "Kotlin"
+            ],
+            "bio": "Jamil develops native Android applications with Java and Kotlin."
+        },
+        {
+            "id": 18,
+            "name": "Ayesha",
+            "avatar": "https://i.pravatar.cc/150?img=18",
+            "numberOfArticles": 2,
+            "stack": [
+                "C",
+                "C++",
+                "Data Structures"
+            ],
+            "bio": "Ayesha enjoys competitive programming and deep dives into algorithms."
+        },
+        {
+            "id": 19,
+            "name": "Rakib",
+            "avatar": "https://i.pravatar.cc/150?img=19",
+            "numberOfArticles": 4,
+            "stack": [
+                "React Native",
+                "Expo",
+                "Firebase"
+            ],
+            "bio": "Rakib creates cross-platform mobile applications with React Native and Expo."
+        },
+        {
+            "id": 20,
+            "name": "Nabila",
+            "avatar": "https://i.pravatar.cc/150?img=20",
+            "numberOfArticles": 5,
+            "stack": [
+                "Python",
+                "Data Science",
+                "Pandas"
+            ],
+            "bio": "Nabila is a data science enthusiast who loves working with Python libraries like Pandas and NumPy."
+        },
+        {
+            "id": 21,
+            "name": "Tanvir",
+            "avatar": "https://i.pravatar.cc/150?img=21",
+            "numberOfArticles": 3,
+            "stack": [
+                "React",
+                "Tailwind CSS",
+                "Vite"
+            ],
+            "bio": "Tanvir builds sleek and fast frontends using modern tools like Vite and Tailwind CSS."
+        },
+        {
+            "id": 22,
+            "name": "Rumana",
+            "avatar": "https://i.pravatar.cc/150?img=22",
+            "numberOfArticles": 1,
+            "stack": [
+                "R",
+                "Shiny",
+                "Data Visualization"
+            ],
+            "bio": "Rumana specializes in data analysis and dashboard creation with R and Shiny."
+        },
+        {
+            "id": 23,
+            "name": "Ehsan",
+            "avatar": "https://i.pravatar.cc/150?img=23",
+            "numberOfArticles": 4,
+            "stack": [
+                "Elixir",
+                "Phoenix",
+                "PostgreSQL"
+            ],
+            "bio": "Ehsan enjoys functional programming and works with Elixir and Phoenix for real-time apps."
+        },
+        {
+            "id": 24,
+            "name": "Tahmina",
+            "avatar": "https://i.pravatar.cc/150?img=24",
+            "numberOfArticles": 6,
+            "stack": [
+                "Machine Learning",
+                "TensorFlow",
+                "Python"
+            ],
+            "bio": "Tahmina is passionate about AI and building ML models with Python and TensorFlow."
+        },
+        {
+            "id": 25,
+            "name": "Nayeem",
+            "avatar": "https://i.pravatar.cc/150?img=25",
+            "numberOfArticles": 7,
+            "stack": [
+                "Rust",
+                "WebAssembly",
+                "System Design"
+            ],
+            "bio": "Nayeem explores low-level programming and builds performant web applications using Rust."
+        },
+        {
+            "id": 26,
+            "name": "Farhana",
+            "avatar": "https://i.pravatar.cc/150?img=26",
+            "numberOfArticles": 2,
+            "stack": [
+                "Unity",
+                "C#",
+                "Game Design"
+            ],
+            "bio": "Farhana is a game developer passionate about building immersive experiences with Unity."
+        },
+        {
+            "id": 27,
+            "name": "Shahriar",
+            "avatar": "https://i.pravatar.cc/150?img=27",
+            "numberOfArticles": 9,
+            "stack": [
+                "Flutter",
+                "Dart",
+                "Firebase"
+            ],
+            "bio": "Shahriar crafts mobile apps using Flutter and loves experimenting with UI animations."
+        },
+        {
+            "id": 28,
+            "name": "Maliha",
+            "avatar": "https://i.pravatar.cc/150?img=28",
+            "numberOfArticles": 5,
+            "stack": [
+                "AWS",
+                "DevOps",
+                "Terraform"
+            ],
+            "bio": "Maliha automates infrastructure and specializes in cloud deployment and CI/CD pipelines."
+        },
+        {
+            "id": 29,
+            "name": "Reza",
+            "avatar": "https://i.pravatar.cc/150?img=29",
+            "numberOfArticles": 3,
+            "stack": [
+                "SQL",
+                "Data Engineering",
+                "ETL"
+            ],
+            "bio": "Reza focuses on designing data pipelines and working with large-scale databases."
+        },
+        {
+            "id": 30,
+            "name": "Lubna",
+            "avatar": "https://i.pravatar.cc/150?img=30",
+            "numberOfArticles": 4,
+            "stack": [
+                "Cybersecurity",
+                "Linux",
+                "Python"
+            ],
+            "bio": "Lubna is a cybersecurity enthusiast who loves ethical hacking and penetration testing."
+        }
+    ],
+    "articals": [
+        {
+            "id": 1,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=DevOps&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 10,
+            "tags": [
+                "DevOps",
+                "Database",
+                "React"
+            ],
+            "publishedDate": "2024-01-14",
+            "readCount": 893,
+            "numberOfComments": 50
+        },
+        {
+            "id": 2,
+            "title": "Intro to TypeScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Database&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Intro to TypeScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 8,
+            "tags": [
+                "UX",
+                "React",
+                "Database"
+            ],
+            "publishedDate": "2024-11-14",
+            "readCount": 482,
+            "numberOfComments": 29
+        },
+        {
+            "id": 3,
+            "title": "Modern CSS Tricks",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Database&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Modern CSS Tricks is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 15,
+            "tags": [
+                "Next.js",
+                "Database",
+                "Backend"
+            ],
+            "publishedDate": "2023-10-26",
+            "readCount": 713,
+            "numberOfComments": 49
+        },
+        {
+            "id": 4,
+            "title": "React Hooks in Depth",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Web&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "React Hooks in Depth is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 27,
+            "tags": [
+                "Web",
+                "JavaScript",
+                "API"
+            ],
+            "publishedDate": "2024-09-23",
+            "readCount": 427,
+            "numberOfComments": 46
+        },
+        {
+            "id": 5,
+            "title": "CSS Grid vs Flexbox",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Node.js&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "CSS Grid vs Flexbox is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 29,
+            "tags": [
+                "Web",
+                "Node.js",
+                "TypeScript"
+            ],
+            "publishedDate": "2022-08-10",
+            "readCount": 258,
+            "numberOfComments": 41
+        },
+        {
+            "id": 6,
+            "title": "Managing State in React",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Next.js&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Managing State in React is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 28,
+            "tags": [
+                "JavaScript",
+                "Database",
+                "Next.js"
+            ],
+            "publishedDate": "2023-02-08",
+            "readCount": 671,
+            "numberOfComments": 38
+        },
+        {
+            "id": 7,
+            "title": "Design Patterns in JavaScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=React&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Design Patterns in JavaScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 26,
+            "tags": [
+                "React",
+                "DevOps",
+                "API"
+            ],
+            "publishedDate": "2023-07-02",
+            "readCount": 740,
+            "numberOfComments": 11
+        },
+        {
+            "id": 8,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Frontend&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 7,
+            "tags": [
+                "Frontend",
+                "CSS",
+                "Next.js"
+            ],
+            "publishedDate": "2024-05-11",
+            "readCount": 759,
+            "numberOfComments": 29
+        },
+        {
+            "id": 9,
+            "title": "Modern CSS Tricks",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=UX&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Modern CSS Tricks is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 17,
+            "tags": [
+                "TypeScript",
+                "Node.js",
+                "UX"
+            ],
+            "publishedDate": "2022-11-20",
+            "readCount": 626,
+            "numberOfComments": 47
+        },
+        {
+            "id": 10,
+            "title": "CSS Grid vs Flexbox",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Backend&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "CSS Grid vs Flexbox is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 12,
+            "tags": [
+                "API",
+                "Backend",
+                "UI"
+            ],
+            "publishedDate": "2024-12-02",
+            "readCount": 399,
+            "numberOfComments": 39
+        },
+        {
+            "id": 11,
+            "title": "Intro to TypeScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=DevOps&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Intro to TypeScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 1,
+            "tags": [
+                "TypeScript",
+                "DevOps",
+                "JavaScript"
+            ],
+            "publishedDate": "2022-11-28",
+            "readCount": 790,
+            "numberOfComments": 0
+        },
+        {
+            "id": 12,
+            "title": "Understanding JavaScript Closures",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=JavaScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Understanding JavaScript Closures is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 18,
+            "tags": [
+                "Backend",
+                "Database",
+                "JavaScript"
+            ],
+            "publishedDate": "2023-07-03",
+            "readCount": 976,
+            "numberOfComments": 15
+        },
+        {
+            "id": 13,
+            "title": "Modern CSS Tricks",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Next.js&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Modern CSS Tricks is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 13,
+            "tags": [
+                "UX",
+                "CSS",
+                "Next.js"
+            ],
+            "publishedDate": "2022-07-26",
+            "readCount": 214,
+            "numberOfComments": 32
+        },
+        {
+            "id": 14,
+            "title": "Server-side Rendering with Next.js",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=CSS&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Server-side Rendering with Next.js is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 5,
+            "tags": [
+                "Frontend",
+                "DevOps",
+                "CSS"
+            ],
+            "publishedDate": "2024-02-04",
+            "readCount": 688,
+            "numberOfComments": 32
+        },
+        {
+            "id": 15,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=TypeScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 28,
+            "tags": [
+                "API",
+                "Frontend",
+                "TypeScript"
+            ],
+            "publishedDate": "2024-11-23",
+            "readCount": 673,
+            "numberOfComments": 26
+        },
+        {
+            "id": 16,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=TypeScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 19,
+            "tags": [
+                "Frontend",
+                "TypeScript",
+                "DevOps"
+            ],
+            "publishedDate": "2023-09-06",
+            "readCount": 843,
+            "numberOfComments": 45
+        },
+        {
+            "id": 17,
+            "title": "Building REST APIs with Express",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=React&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Building REST APIs with Express is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 9,
+            "tags": [
+                "HTML",
+                "Database",
+                "React"
+            ],
+            "publishedDate": "2023-08-15",
+            "readCount": 54,
+            "numberOfComments": 46
+        },
+        {
+            "id": 18,
+            "title": "Managing State in React",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=HTML&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Managing State in React is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 1,
+            "tags": [
+                "HTML",
+                "Next.js",
+                "Frontend"
+            ],
+            "publishedDate": "2024-01-06",
+            "readCount": 443,
+            "numberOfComments": 24
+        },
+        {
+            "id": 19,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=TypeScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 15,
+            "tags": [
+                "Node.js",
+                "TypeScript",
+                "UI"
+            ],
+            "publishedDate": "2022-07-24",
+            "readCount": 551,
+            "numberOfComments": 14
+        },
+        {
+            "id": 20,
+            "title": "Intro to TypeScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=CSS&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Intro to TypeScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 7,
+            "tags": [
+                "CSS",
+                "Web",
+                "TypeScript"
+            ],
+            "publishedDate": "2024-04-26",
+            "readCount": 239,
+            "numberOfComments": 13
+        },
+        {
+            "id": 21,
+            "title": "Design Patterns in JavaScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=HTML&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Design Patterns in JavaScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 17,
+            "tags": [
+                "DevOps",
+                "Database",
+                "HTML"
+            ],
+            "publishedDate": "2022-09-25",
+            "readCount": 514,
+            "numberOfComments": 22
+        },
+        {
+            "id": 22,
+            "title": "Understanding JavaScript Closures",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Frontend&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Understanding JavaScript Closures is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 24,
+            "tags": [
+                "Frontend",
+                "Web",
+                "UX"
+            ],
+            "publishedDate": "2024-01-14",
+            "readCount": 767,
+            "numberOfComments": 13
+        },
+        {
+            "id": 23,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Frontend&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 12,
+            "tags": [
+                "DevOps",
+                "Frontend",
+                "Node.js"
+            ],
+            "publishedDate": "2024-04-18",
+            "readCount": 735,
+            "numberOfComments": 16
+        },
+        {
+            "id": 24,
+            "title": "Modern CSS Tricks",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=JavaScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Modern CSS Tricks is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 20,
+            "tags": [
+                "API",
+                "JavaScript",
+                "CSS"
+            ],
+            "publishedDate": "2024-08-24",
+            "readCount": 335,
+            "numberOfComments": 16
+        },
+        {
+            "id": 25,
+            "title": "Server-side Rendering with Next.js",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=CSS&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Server-side Rendering with Next.js is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 25,
+            "tags": [
+                "CSS",
+                "JavaScript",
+                "UX"
+            ],
+            "publishedDate": "2023-05-13",
+            "readCount": 639,
+            "numberOfComments": 14
+        },
+        {
+            "id": 26,
+            "title": "Modern CSS Tricks",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Web&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Modern CSS Tricks is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 28,
+            "tags": [
+                "TypeScript",
+                "UI",
+                "Web"
+            ],
+            "publishedDate": "2022-12-03",
+            "readCount": 863,
+            "numberOfComments": 50
+        },
+        {
+            "id": 27,
+            "title": "Async/Await in JavaScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=DevOps&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Async/Await in JavaScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 14,
+            "tags": [
+                "DevOps",
+                "Frontend",
+                "CSS"
+            ],
+            "publishedDate": "2024-06-02",
+            "readCount": 821,
+            "numberOfComments": 12
+        },
+        {
+            "id": 28,
+            "title": "Building REST APIs with Express",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=UI&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Building REST APIs with Express is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 23,
+            "tags": [
+                "UI",
+                "JavaScript",
+                "Frontend"
+            ],
+            "publishedDate": "2023-02-17",
+            "readCount": 968,
+            "numberOfComments": 49
+        },
+        {
+            "id": 29,
+            "title": "Intro to TypeScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Node.js&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Intro to TypeScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 12,
+            "tags": [
+                "UI",
+                "Node.js",
+                "Next.js"
+            ],
+            "publishedDate": "2024-03-23",
+            "readCount": 571,
+            "numberOfComments": 38
+        },
+        {
+            "id": 30,
+            "title": "Managing State in React",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=JavaScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Managing State in React is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 22,
+            "tags": [
+                "CSS",
+                "JavaScript",
+                "HTML"
+            ],
+            "publishedDate": "2024-09-24",
+            "readCount": 684,
+            "numberOfComments": 39
+        },
+        {
+            "id": 31,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=React&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 12,
+            "tags": [
+                "Next.js",
+                "Web",
+                "React"
+            ],
+            "publishedDate": "2022-02-17",
+            "readCount": 898,
+            "numberOfComments": 0
+        },
+        {
+            "id": 32,
+            "title": "Managing State in React",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=API&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Managing State in React is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 24,
+            "tags": [
+                "Web",
+                "Frontend",
+                "API"
+            ],
+            "publishedDate": "2023-11-02",
+            "readCount": 713,
+            "numberOfComments": 22
+        },
+        {
+            "id": 33,
+            "title": "Async/Await in JavaScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Database&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Async/Await in JavaScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 3,
+            "tags": [
+                "Frontend",
+                "Database",
+                "DevOps"
+            ],
+            "publishedDate": "2024-09-04",
+            "readCount": 484,
+            "numberOfComments": 40
+        },
+        {
+            "id": 34,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=API&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 22,
+            "tags": [
+                "Database",
+                "UX",
+                "API"
+            ],
+            "publishedDate": "2023-02-28",
+            "readCount": 939,
+            "numberOfComments": 14
+        },
+        {
+            "id": 35,
+            "title": "React Hooks in Depth",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=TypeScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "React Hooks in Depth is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 27,
+            "tags": [
+                "TypeScript",
+                "HTML",
+                "Frontend"
+            ],
+            "publishedDate": "2022-11-18",
+            "readCount": 523,
+            "numberOfComments": 5
+        },
+        {
+            "id": 36,
+            "title": "Building REST APIs with Express",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=TypeScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Building REST APIs with Express is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 22,
+            "tags": [
+                "React",
+                "API",
+                "TypeScript"
+            ],
+            "publishedDate": "2024-10-02",
+            "readCount": 192,
+            "numberOfComments": 28
+        },
+        {
+            "id": 37,
+            "title": "Design Patterns in JavaScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=API&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Design Patterns in JavaScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 23,
+            "tags": [
+                "DevOps",
+                "API",
+                "Node.js"
+            ],
+            "publishedDate": "2023-07-28",
+            "readCount": 742,
+            "numberOfComments": 38
+        },
+        {
+            "id": 38,
+            "title": "Intro to TypeScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=API&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Intro to TypeScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 19,
+            "tags": [
+                "Web",
+                "Next.js",
+                "API"
+            ],
+            "publishedDate": "2024-09-03",
+            "readCount": 71,
+            "numberOfComments": 19
+        },
+        {
+            "id": 39,
+            "title": "Node.js Event Loop Explained",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Web&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Node.js Event Loop Explained is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 26,
+            "tags": [
+                "Web",
+                "CSS",
+                "DevOps"
+            ],
+            "publishedDate": "2024-04-15",
+            "readCount": 145,
+            "numberOfComments": 19
+        },
+        {
+            "id": 40,
+            "title": "Secure Authentication in Node.js",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=HTML&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Secure Authentication in Node.js is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 4,
+            "tags": [
+                "API",
+                "Backend",
+                "HTML"
+            ],
+            "publishedDate": "2022-07-22",
+            "readCount": 222,
+            "numberOfComments": 23
+        },
+        {
+            "id": 41,
+            "title": "Modern CSS Tricks",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Database&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Modern CSS Tricks is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 1,
+            "tags": [
+                "CSS",
+                "UI",
+                "Database"
+            ],
+            "publishedDate": "2022-03-05",
+            "readCount": 960,
+            "numberOfComments": 41
+        },
+        {
+            "id": 42,
+            "title": "Design Patterns in JavaScript",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=DevOps&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Design Patterns in JavaScript is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 17,
+            "tags": [
+                "Next.js",
+                "DevOps",
+                "TypeScript"
+            ],
+            "publishedDate": "2023-07-27",
+            "readCount": 718,
+            "numberOfComments": 24
+        },
+        {
+            "id": 43,
+            "title": "Secure Authentication in Node.js",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Web&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Secure Authentication in Node.js is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 19,
+            "tags": [
+                "Backend",
+                "Web",
+                "Database"
+            ],
+            "publishedDate": "2024-01-20",
+            "readCount": 711,
+            "numberOfComments": 35
+        },
+        {
+            "id": 44,
+            "title": "React Hooks in Depth",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=UI&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "React Hooks in Depth is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 1,
+            "tags": [
+                "JavaScript",
+                "UI",
+                "API"
+            ],
+            "publishedDate": "2023-01-14",
+            "readCount": 553,
+            "numberOfComments": 3
+        },
+        {
+            "id": 45,
+            "title": "Modern CSS Tricks",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=JavaScript&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Modern CSS Tricks is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 12,
+            "tags": [
+                "HTML",
+                "Next.js",
+                "JavaScript"
+            ],
+            "publishedDate": "2024-04-23",
+            "readCount": 217,
+            "numberOfComments": 25
+        },
+        {
+            "id": 46,
+            "title": "React Hooks in Depth",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Database&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "React Hooks in Depth is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 30,
+            "tags": [
+                "CSS",
+                "Database",
+                "Web"
+            ],
+            "publishedDate": "2024-02-28",
+            "readCount": 770,
+            "numberOfComments": 50
+        },
+        {
+            "id": 47,
+            "title": "Server-side Rendering with Next.js",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=UI&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "Server-side Rendering with Next.js is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 3,
+            "tags": [
+                "UI",
+                "Next.js",
+                "Frontend"
+            ],
+            "publishedDate": "2022-11-04",
+            "readCount": 130,
+            "numberOfComments": 1
+        },
+        {
+            "id": 48,
+            "title": "React Hooks in Depth",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=React&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "React Hooks in Depth is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 21,
+            "tags": [
+                "TypeScript",
+                "Node.js",
+                "React"
+            ],
+            "publishedDate": "2022-03-24",
+            "readCount": 737,
+            "numberOfComments": 41
+        },
+        {
+            "id": 49,
+            "title": "React Hooks in Depth",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Database&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "React Hooks in Depth is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 20,
+            "tags": [
+                "Next.js",
+                "React",
+                "Database"
+            ],
+            "publishedDate": "2024-11-28",
+            "readCount": 559,
+            "numberOfComments": 40
+        },
+        {
+            "id": 50,
+            "title": "CSS Grid vs Flexbox",
+            "coverageImage": "https://api.unsplash.com/photos/random?query=Database&orientation=landscape&client_id=-ro7zEYlBBAPYBhdhv46Z3XTs9ujvgJr7U6NZlYdPjc",
+            "content": "CSS Grid vs Flexbox is an in-depth article discussing important concepts, examples, and use cases in modern web development.",
+            "userId": 8,
+            "tags": [
+                "DevOps",
+                "Frontend",
+                "Database"
+            ],
+            "publishedDate": "2024-03-21",
+            "readCount": 637,
+            "numberOfComments": 46
+        }
+    ],
+    "comments": [
+        {
+            "id": 728,
+            "articleId": 3,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=9",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2023-09-13"
+        },
+        {
+            "id": 957,
+            "articleId": 25,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=60",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2024-03-04"
+        },
+        {
+            "id": 197,
+            "articleId": 20,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=54",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2023-05-02"
+        },
+        {
+            "id": 722,
+            "articleId": 39,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=53",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2022-09-18"
+        },
+        {
+            "id": 107,
+            "articleId": 30,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=66",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2023-05-15"
+        },
+        {
+            "id": 499,
+            "articleId": 10,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=8",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2023-01-18"
+        },
+        {
+            "id": 544,
+            "articleId": 31,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=32",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2024-04-13"
+        },
+        {
+            "id": 116,
+            "articleId": 2,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=31",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2022-03-06"
+        },
+        {
+            "id": 591,
+            "articleId": 50,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=14",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2022-07-08"
+        },
+        {
+            "id": 248,
+            "articleId": 6,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=45",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2022-01-14"
+        },
+        {
+            "id": 371,
+            "articleId": 19,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=65",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-06-09"
+        },
+        {
+            "id": 56,
+            "articleId": 23,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=63",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2022-10-26"
+        },
+        {
+            "id": 163,
+            "articleId": 29,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=1",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2023-07-06"
+        },
+        {
+            "id": 848,
+            "articleId": 5,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=51",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2022-10-20"
+        },
+        {
+            "id": 85,
+            "articleId": 19,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=33",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2022-05-10"
+        },
+        {
+            "id": 3,
+            "articleId": 33,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=7",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2023-06-26"
+        },
+        {
+            "id": 922,
+            "articleId": 7,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=61",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2024-09-03"
+        },
+        {
+            "id": 706,
+            "articleId": 39,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=44",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2022-08-23"
+        },
+        {
+            "id": 609,
+            "articleId": 32,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=28",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2024-03-26"
+        },
+        {
+            "id": 358,
+            "articleId": 38,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=69",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-10-11"
+        },
+        {
+            "id": 914,
+            "articleId": 10,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=24",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2023-03-12"
+        },
+        {
+            "id": 921,
+            "articleId": 41,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=35",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2024-01-03"
+        },
+        {
+            "id": 546,
+            "articleId": 46,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=3",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2022-12-24"
+        },
+        {
+            "id": 865,
+            "articleId": 6,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=9",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2022-06-04"
+        },
+        {
+            "id": 86,
+            "articleId": 12,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=35",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2024-07-14"
+        },
+        {
+            "id": 148,
+            "articleId": 12,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=27",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2023-01-06"
+        },
+        {
+            "id": 607,
+            "articleId": 14,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=27",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2023-02-11"
+        },
+        {
+            "id": 922,
+            "articleId": 8,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=70",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2023-03-06"
+        },
+        {
+            "id": 158,
+            "articleId": 24,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=6",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2023-02-19"
+        },
+        {
+            "id": 709,
+            "articleId": 6,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=38",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-09-16"
+        },
+        {
+            "id": 5,
+            "articleId": 21,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=59",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2024-05-06"
+        },
+        {
+            "id": 196,
+            "articleId": 26,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=68",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2023-03-17"
+        },
+        {
+            "id": 290,
+            "articleId": 33,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=56",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2024-11-04"
+        },
+        {
+            "id": 916,
+            "articleId": 15,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=16",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2023-12-09"
+        },
+        {
+            "id": 929,
+            "articleId": 41,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=25",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2023-06-13"
+        },
+        {
+            "id": 683,
+            "articleId": 46,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=10",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2022-05-17"
+        },
+        {
+            "id": 681,
+            "articleId": 16,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=37",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2024-11-26"
+        },
+        {
+            "id": 47,
+            "articleId": 30,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=46",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2024-07-15"
+        },
+        {
+            "id": 638,
+            "articleId": 20,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=37",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2024-06-01"
+        },
+        {
+            "id": 933,
+            "articleId": 20,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=48",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2022-12-14"
+        },
+        {
+            "id": 352,
+            "articleId": 33,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=65",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2024-10-15"
+        },
+        {
+            "id": 265,
+            "articleId": 48,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=4",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2022-12-27"
+        },
+        {
+            "id": 99,
+            "articleId": 21,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=5",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2024-11-27"
+        },
+        {
+            "id": 395,
+            "articleId": 10,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=13",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2023-04-22"
+        },
+        {
+            "id": 185,
+            "articleId": 12,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=16",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2024-05-02"
+        },
+        {
+            "id": 88,
+            "articleId": 35,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=29",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2024-08-23"
+        },
+        {
+            "id": 341,
+            "articleId": 27,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=44",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2024-08-01"
+        },
+        {
+            "id": 147,
+            "articleId": 2,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=57",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2024-04-20"
+        },
+        {
+            "id": 648,
+            "articleId": 9,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=29",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2022-12-19"
+        },
+        {
+            "id": 477,
+            "articleId": 43,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=29",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2023-11-01"
+        },
+        {
+            "id": 732,
+            "articleId": 21,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=7",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2022-04-02"
+        },
+        {
+            "id": 846,
+            "articleId": 30,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=18",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2023-04-10"
+        },
+        {
+            "id": 432,
+            "articleId": 12,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=51",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2024-05-17"
+        },
+        {
+            "id": 667,
+            "articleId": 47,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=7",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2023-01-08"
+        },
+        {
+            "id": 615,
+            "articleId": 24,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=62",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2022-09-19"
+        },
+        {
+            "id": 956,
+            "articleId": 30,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=61",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2024-04-25"
+        },
+        {
+            "id": 230,
+            "articleId": 15,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=50",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-07-12"
+        },
+        {
+            "id": 629,
+            "articleId": 39,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=42",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2023-02-15"
+        },
+        {
+            "id": 952,
+            "articleId": 30,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=30",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2024-10-27"
+        },
+        {
+            "id": 832,
+            "articleId": 15,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=49",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2022-11-20"
+        },
+        {
+            "id": 344,
+            "articleId": 46,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=37",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2022-05-06"
+        },
+        {
+            "id": 499,
+            "articleId": 38,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=24",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2022-05-24"
+        },
+        {
+            "id": 816,
+            "articleId": 1,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=41",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2023-01-26"
+        },
+        {
+            "id": 923,
+            "articleId": 5,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=26",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-11-14"
+        },
+        {
+            "id": 222,
+            "articleId": 2,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=69",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2023-03-19"
+        },
+        {
+            "id": 491,
+            "articleId": 29,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=28",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2023-02-15"
+        },
+        {
+            "id": 233,
+            "articleId": 42,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=11",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2024-03-17"
+        },
+        {
+            "id": 437,
+            "articleId": 41,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=62",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2023-01-21"
+        },
+        {
+            "id": 552,
+            "articleId": 37,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=27",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2022-03-24"
+        },
+        {
+            "id": 242,
+            "articleId": 18,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=3",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2024-02-13"
+        },
+        {
+            "id": 303,
+            "articleId": 45,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=23",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2024-06-04"
+        },
+        {
+            "id": 965,
+            "articleId": 30,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=70",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2024-08-19"
+        },
+        {
+            "id": 163,
+            "articleId": 32,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=67",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2022-03-05"
+        },
+        {
+            "id": 247,
+            "articleId": 32,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=29",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2024-01-16"
+        },
+        {
+            "id": 896,
+            "articleId": 2,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=49",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2024-03-10"
+        },
+        {
+            "id": 257,
+            "articleId": 39,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=30",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2022-12-11"
+        },
+        {
+            "id": 335,
+            "articleId": 6,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=22",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2023-10-28"
+        },
+        {
+            "id": 236,
+            "articleId": 38,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=68",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2024-08-28"
+        },
+        {
+            "id": 505,
+            "articleId": 38,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=44",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2024-06-08"
+        },
+        {
+            "id": 409,
+            "articleId": 18,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=68",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2023-03-21"
+        },
+        {
+            "id": 370,
+            "articleId": 24,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=52",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-01-05"
+        },
+        {
+            "id": 633,
+            "articleId": 14,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=49",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2024-01-18"
+        },
+        {
+            "id": 757,
+            "articleId": 21,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=33",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2023-08-14"
+        },
+        {
+            "id": 512,
+            "articleId": 42,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=28",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2024-10-23"
+        },
+        {
+            "id": 761,
+            "articleId": 28,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=55",
+            "content": "I love how you explained CSS Grid vs Flexbox, very useful.",
+            "createdAt": "2022-03-16"
+        },
+        {
+            "id": 3,
+            "articleId": 21,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=37",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-06-26"
+        },
+        {
+            "id": 204,
+            "articleId": 14,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=24",
+            "content": "I implemented the ideas from your React Hooks article in my project.",
+            "createdAt": "2024-04-07"
+        },
+        {
+            "id": 327,
+            "articleId": 13,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=24",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2024-09-10"
+        },
+        {
+            "id": 770,
+            "articleId": 32,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=45",
+            "content": "I learned a lot about TypeScript from your article, very informative!",
+            "createdAt": "2022-08-25"
+        },
+        {
+            "id": 110,
+            "articleId": 1,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=67",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2023-02-25"
+        },
+        {
+            "id": 469,
+            "articleId": 41,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=32",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2024-06-15"
+        },
+        {
+            "id": 895,
+            "articleId": 5,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=18",
+            "content": "This helped me understand the event loop better, thanks!",
+            "createdAt": "2022-05-23"
+        },
+        {
+            "id": 808,
+            "articleId": 10,
+            "userId": 2,
+            "userName": "John",
+            "userAvatar": "https://i.pravatar.cc/150?img=62",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2023-11-04"
+        },
+        {
+            "id": 538,
+            "articleId": 5,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=13",
+            "content": "The Node.js tutorial was exactly what I needed for my project!",
+            "createdAt": "2023-12-12"
+        },
+        {
+            "id": 254,
+            "articleId": 19,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=40",
+            "content": "The example on async/await was clear and concise.",
+            "createdAt": "2024-06-12"
+        },
+        {
+            "id": 856,
+            "articleId": 16,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=30",
+            "content": "I needed a refresher on modern CSS techniques, and this article was perfect.",
+            "createdAt": "2022-02-18"
+        },
+        {
+            "id": 400,
+            "articleId": 29,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=69",
+            "content": "Amazing post! I now understand the concept of server-side rendering.",
+            "createdAt": "2022-04-18"
+        },
+        {
+            "id": 984,
+            "articleId": 32,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=39",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2023-10-14"
+        },
+        {
+            "id": 102,
+            "articleId": 3,
+            "userId": 3,
+            "userName": "Emily",
+            "userAvatar": "https://i.pravatar.cc/150?img=55",
+            "content": "Your explanation on managing state in React was easy to follow.",
+            "createdAt": "2022-01-14"
+        },
+        {
+            "id": 622,
+            "articleId": 46,
+            "userId": 1,
+            "userName": "Anik",
+            "userAvatar": "https://i.pravatar.cc/150?img=53",
+            "content": "Great article! I learned a lot about closures.",
+            "createdAt": "2022-12-17"
+        }
+    ]
+}
