@@ -5,7 +5,7 @@ import { Flex } from "antd";
 
 const Container = styled.div`
   width: 90%;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: #ecf4fa;
   margin: 20px auto;
   border-radius: 5px;
