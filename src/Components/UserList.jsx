@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { EditOutlined } from "@ant-design/icons";
 import { Avatar, Card, Divider, Pagination, Tag } from "antd";
 import styled from "styled-components";
+import HeadingDivider from "../shared/HeadingDivider";
 
 
 const Container = styled.div`
@@ -71,10 +72,7 @@ const UserList = () => {
 
   return (
     <Container>
-      <DividerWrapper>
-        <h2>Discover Authors</h2>
-        <Divider />
-      </DividerWrapper>
+      <HeadingDivider title="Discover Authors"/>
 
       <CardWrapper>
         {loading
