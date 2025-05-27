@@ -1,21 +1,14 @@
 import { useEffect, useState } from "react";
 import { EditOutlined } from "@ant-design/icons";
-import { Avatar, Card, Divider, Pagination, Tag } from "antd";
+import { Avatar, Card, Pagination, Tag, Row, Col } from "antd";
+import axios from "axios";
 import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
-
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
-`;
-
-const DividerWrapper = styled.div`
-  width: 100%;
-  h2 {
-    margin-left: 20px;
-  }
+  padding: 20px;
 `;
 
 const CardWrapper = styled.div`
@@ -34,6 +27,7 @@ const PagenationWrapper = styled.div`
 
 const UserCard = styled(Card)`
   width: 400px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 `;
 
 // Component
@@ -48,11 +42,9 @@ const UserList = () => {
       try {
         // Simulate delay (optional)
         setTimeout(() => {}, 6000);
-
-        const res = await fetch("http://localhost:8000/users");
-        const data = await res.json();
-        console.log(data);
-        setUsers(data);
+        const res = await axios.get("http://localhost:8000/users");
+        console.log(res.data);
+        setUsers(res.data);
       } catch (err) {
         console.error("Error fetching users:", err);
       } finally {
@@ -72,36 +64,38 @@ const UserList = () => {
 
   return (
     <Container>
-      <HeadingDivider title="Discover Authors"/>
+      <HeadingDivider title="Discover Authors" />
 
-      <CardWrapper>
+      <Row gutter={[24, 24]}>
         {loading
           ? Array.from({ length: 6 }).map((_, index) => (
               <UserCard key={index} loading={true} />
             ))
           : currentUsers.map((user) => (
-              <UserCard key={user.id}>
-                <Card.Meta
-                  avatar={
-                    <Avatar src={`https://i.pravatar.cc/150?u=${user.id}`} />
-                  }
-                  title={user.name}
-                  description={
-                    <>
-                      <p style={{ marginBottom: "7px" }}>
-                        <EditOutlined /> {user.numberOfArticles} Articles
-                      </p>
-                      {user.stack.map((skill, index) => (
-                        <Tag color="green" key={index}>
-                          {skill}
-                        </Tag>
-                      ))}
-                    </>
-                  }
-                />
-              </UserCard>
+              <Col key={user.id} xs={24} sm={12} md={8} lg={6}>
+                <Card key={user.id} hoverable>
+                  <Card.Meta
+                    avatar={
+                      <Avatar src={`https://i.pravatar.cc/150?u=${user.id}`} />
+                    }
+                    title={user.name}
+                    description={
+                      <>
+                        <p style={{ marginBottom: "7px" }}>
+                          <EditOutlined /> {user.numberOfArticles} Articles
+                        </p>
+                        {user.stack.map((skill, index) => (
+                          <Tag color="green" key={index}>
+                            {skill}
+                          </Tag>
+                        ))}
+                      </>
+                    }
+                  />
+                </Card>
+              </Col>
             ))}
-      </CardWrapper>
+      </Row>
 
       <PagenationWrapper>
         <Pagination
