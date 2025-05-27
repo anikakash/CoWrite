@@ -3,7 +3,8 @@ import NabBar from "./shared/NabBar";
 import UserList from "./Components/UserList";
 import BlogCard from "./Components/BlogCard";
 import Footer from "./shared/Footer";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AuthorProfile from "./Components/AuthorProfile";
 
 const Container = styled.div`
   width: 90%;
@@ -17,17 +18,14 @@ const Container = styled.div`
 
 function App() {
   return (
-    <Router>
-       <Container>
-        <NabBar />
-        <Routes>
-          <Route path="/" element={<UserList />} />
-          {/* <Route path="/user/:id" element={<UserDetails />} /> */}
-        </Routes>
-        <BlogCard />
-        <Footer />
-      </Container>
-    </Router>
+    <Container>
+      <NabBar />
+      {/* <UserList />
+      <BlogCard /> */}
+      <AuthorProfile id={1} />
+      <BlogCard />
+      <Footer />
+    </Container>
   );
 }
 
