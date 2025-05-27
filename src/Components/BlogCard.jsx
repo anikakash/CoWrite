@@ -45,7 +45,7 @@ const BlogCard = () => {
     const getRecentArticles = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8000/articals?_sort=publishedDate&_order=desc&_limit=10"
+          "http://localhost:8000/articals?userId=18&_sort=createdAt&_order=desc"
         );
         setRecentBlog(res.data);
       } catch (err) {
@@ -83,15 +83,19 @@ const BlogCard = () => {
                   }
                 >
                   <Title>{blog.title}</Title>
+                  {/* <Description>{blog.userId}</Description> */}
                   <Description>{blog.content.slice(0, 100)}...</Description>
                   <Footer>
                     <span>
                       <CalendarOutlined />{" "}
-                      {new Date(blog.publishedDate).toLocaleDateString("en-US", {
-                        year: "numeric",
-                        month: "short",
-                        day: "numeric",
-                      })}
+                      {new Date(blog.publishedDate).toLocaleDateString(
+                        "en-US",
+                        {
+                          year: "numeric",
+                          month: "short",
+                          day: "numeric",
+                        }
+                      )}
                     </span>
                     <span>
                       <CommentOutlined /> {blog.numberOfComments} Comments
