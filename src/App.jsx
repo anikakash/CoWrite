@@ -5,6 +5,7 @@ import BlogCard from "./Components/BlogCard";
 import Footer from "./shared/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AuthorProfile from "./Components/AuthorProfile";
+import BlogDetails from "./Components/BlogDetails";
 
 const Container = styled.div`
   width: 90%;
@@ -22,8 +23,9 @@ function App() {
       <NabBar />
       {/* <UserList />
       <BlogCard /> */}
-      <AuthorProfile id={1} />
-      <BlogCard />
+      {/* <AuthorProfile id={1} />
+      <BlogCard /> */}
+      <BlogDetails />
       <Footer />
     </Container>
   );
