@@ -14,19 +14,6 @@ const HeadWrapper = styled.div`
   border-radius: 7px;
 `;
 
-const NavLinks = styled(Menu)`
-  display: flex;
-  align-items: center;
-  background: transparent;
-  width: 600px;
-  margin: 0 10px;
-  .ant-menu-item {
-    font-weight: bold;
-    font-size: 16px;
-    align-items: center;
-    margin: 0 auto;
-  }
-`;
 const Logo = styled.div`
   display: flex;
   align-items: center;
@@ -39,27 +26,16 @@ const Logo = styled.div`
   }
 `;
 
-
 const RightSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* height: 40px;
-  width: 80px; */
   padding: 0 10px;
-  font-size: 35px; /* icon size */
-  color: #0f172a;  /* optional: dark color */
-  gap: 10px;       /* space between icons */
+  font-size: 35px; 
+  color: #0f172a; 
+  gap: 10px;      
   cursor: pointer;
 `;
-
-
-const SignInButton = styled(Button)`
-  background-color: #0f172a;
-  color: #fff;
-  border: none;
-`;
-
 
 
 const Footer = () => {
