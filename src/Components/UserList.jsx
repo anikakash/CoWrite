@@ -4,6 +4,7 @@ import { Avatar, Card, Pagination, Tag, Row, Col } from "antd";
 import axios from "axios";
 import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -65,6 +66,7 @@ const UserList = () => {
   return (
     <Container>
       <HeadingDivider title="Discover Authors" />
+   
 
       <Row gutter={[24, 24]}>
         {loading
@@ -73,6 +75,7 @@ const UserList = () => {
             ))
           : currentUsers.map((user) => (
               <Col key={user.id} xs={24} sm={12} md={8} lg={6}>
+                <Link to={`/users/${user.id}`}>
                 <Card key={user.id} hoverable>
                   <Card.Meta
                     avatar={
@@ -93,6 +96,7 @@ const UserList = () => {
                     }
                   />
                 </Card>
+                </Link>
               </Col>
             ))}
       </Row>

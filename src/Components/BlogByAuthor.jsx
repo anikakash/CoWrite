@@ -4,7 +4,7 @@ import HeadingDivider from "../shared/HeadingDivider";
 import { Card, Row, Col } from "antd";
 import { CalendarOutlined, CommentOutlined } from "@ant-design/icons";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 const { Meta } = Card;
 
@@ -38,7 +38,7 @@ const Footer = styled.div`
   }
 `;
 
-const BlogCard = () => {
+const BlogByAuthor = ({id}) => {
   const [recentBlog, setRecentBlog] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -46,9 +46,11 @@ const BlogCard = () => {
     const getRecentArticles = async () => {
       try {
         const res = await axios.get(
-          "http://localhost:8000/articals?_sort=createdAt&_order=desc&_limit=10"
+          `http://localhost:8000/articals?userId=${id}`
         );
         setRecentBlog(res.data);
+        console.log(res.data)
+        console.log("Author ID: ", id);
       } catch (err) {
         console.log("Error fetching recent articles: ", err);
       } finally {
@@ -114,4 +116,4 @@ const BlogCard = () => {
   );
 };
 
-export default BlogCard;
+export default BlogByAuthor;
