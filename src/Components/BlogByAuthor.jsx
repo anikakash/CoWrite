@@ -4,9 +4,7 @@ import HeadingDivider from "../shared/HeadingDivider";
 import { Card, Row, Col } from "antd";
 import { CalendarOutlined, CommentOutlined } from "@ant-design/icons";
 import axios from "axios";
-import { Link, useParams } from "react-router-dom";
-
-const { Meta } = Card;
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
   display: flex;
@@ -33,9 +31,6 @@ const Footer = styled.div`
   color: #888;
   font-size: 13px;
   margin-top: 10px;
-  svg {
-    margin-right: 6px;
-  }
 `;
 
 const BlogByAuthor = ({id}) => {
@@ -71,7 +66,6 @@ const BlogByAuthor = ({id}) => {
               </Col>
             ))
           : recentBlog.map((blog) => (
-              // <Link to={`/articals/${blog.id}`} >
               <Col key={blog.id} xs={24} sm={12} md={8} lg={6}>
                 <Link to={`/articles/${blog.id}`}>
                   <Card
@@ -88,7 +82,6 @@ const BlogByAuthor = ({id}) => {
                     }
                   >
                     <Title>{blog.title}</Title>
-                    {/* <Description>{blog.userId}</Description> */}
                     <Description>{blog.content.slice(0, 100)}...</Description>
                     <Footer>
                       <span>
@@ -109,7 +102,6 @@ const BlogByAuthor = ({id}) => {
                   </Card>
                 </Link>
               </Col>
-              // </Link>
             ))}
       </Row>
     </Container>

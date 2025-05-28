@@ -6,8 +6,6 @@ import { CalendarOutlined, CommentOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const { Meta } = Card;
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,9 +31,6 @@ const Footer = styled.div`
   color: #888;
   font-size: 13px;
   margin-top: 10px;
-  svg {
-    margin-right: 6px;
-  }
 `;
 
 const BlogCard = () => {
@@ -69,7 +64,6 @@ const BlogCard = () => {
               </Col>
             ))
           : recentBlog.map((blog) => (
-              // <Link to={`/articals/${blog.id}`} >
               <Col key={blog.id} xs={24} sm={12} md={8} lg={6}>
                 <Link to={`/articles/${blog.id}`}>
                   <Card
@@ -86,7 +80,6 @@ const BlogCard = () => {
                     }
                   >
                     <Title>{blog.title}</Title>
-                    {/* <Description>{blog.userId}</Description> */}
                     <Description>{blog.content.slice(0, 100)}...</Description>
                     <Footer>
                       <span>
@@ -107,7 +100,6 @@ const BlogCard = () => {
                   </Card>
                 </Link>
               </Col>
-              // </Link>
             ))}
       </Row>
     </Container>

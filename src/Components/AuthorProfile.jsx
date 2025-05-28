@@ -75,7 +75,6 @@ const { id } = useParams();
 
 export default AuthorProfile;
 
-// Styled Components
 const Container = styled.div`
   padding: 20px;
 `;

@@ -74,6 +74,7 @@ const List = styled.ul`
 const CommentItem = styled.div`
   display: flex;
   gap: 16px;
+  margin-bottom: 20px;
 `;
 
 const UserTitle = styled.div`

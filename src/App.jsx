@@ -1,7 +1,5 @@
 import styled from "styled-components";
 import NabBar from "./shared/NabBar";
-import UserList from "./Components/UserList";
-import BlogCard from "./Components/BlogCard";
 import Footer from "./shared/Footer";
 import AuthorProfile from "./Components/AuthorProfile";
 import BlogDetails from "./Components/BlogDetails";
@@ -24,7 +22,6 @@ function App() {
     <Container>
     <NabBar />
       <Routes>
-        
         <Route path="/" element={<Home />} />
         <Route path="/users/:id" element={<AuthorProfile />} />
         <Route path="/articles/:id" element={<BlogDetails />} />
@@ -32,15 +29,6 @@ function App() {
       <Footer />
       </Container>
     </BrowserRouter>
-    // <Container>
-    //   <NabBar />
-    //    <UserList />
-    //   <BlogCard />
-    //    <AuthorProfile id={1} />
-    //   <BlogCard />
-    //   <BlogDetails />
-    //   <Footer />
-    // </Container>
   );
 }
 
