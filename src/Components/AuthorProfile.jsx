@@ -4,11 +4,13 @@ import styled from "styled-components";
 import { Avatar, Tag, Row, Col, Card } from "antd";
 import { EditOutlined } from "@ant-design/icons";
 import HeadingDivider from "../shared/HeadingDivider";
+import { useParams } from "react-router-dom";
+import BlogByAuthor from "./BlogByAuthor";
 
-const AuthorProfile = ({ id = 1 }) => {
+const AuthorProfile = () => {
   const [author, setAuthor] = useState({});
   const [loading, setLoading] = useState(true);
-
+const { id } = useParams();
   useEffect(() => {
     const getAuthor = async () => {
       try {
@@ -66,6 +68,7 @@ const AuthorProfile = ({ id = 1 }) => {
           </CardWrapper>
         </Col>
       </Row>
+      {author?.id && <BlogByAuthor id={author.id} />}
     </Container>
   );
 };

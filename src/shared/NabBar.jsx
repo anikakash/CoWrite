@@ -1,5 +1,6 @@
 import { UserOutlined } from "@ant-design/icons";
-import { Menu, Button  } from "antd";
+import { Menu, Button } from "antd";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeadWrapper = styled.div`
@@ -39,7 +40,6 @@ const Logo = styled.div`
   }
 `;
 
-
 const RightSection = styled.div`
   display: flex;
   align-items: center;
@@ -52,24 +52,26 @@ const SignInButton = styled(Button)`
   border: none;
 `;
 
-
-
 const NabBar = () => {
   return (
     <div>
       <HeadWrapper>
-        <Logo>
-          <img src="/blog_ai.png" alt="logo" />
-          CoWrite
-        </Logo>
+        <Link to="/" style={{ textDecoration: "none", color: "inherit", display: "inline-block" }}>
+          <Logo>
+            <img src="/blog_ai.png" alt="logo" />
+            CoWrite
+          </Logo>
+        </Link>
         <NavLinks>
-          <Menu.Item key="home" style={{alignItems:"center"}}>Home</Menu.Item>
+          <Menu.Item key="home" style={{ alignItems: "center" }}>
+            <Link to="/" style={{ textDecoration: "none", color: "inherit", display: "inline-block" }}>Home</Link>
+          </Menu.Item>
           <Menu.Item key="author">Authors</Menu.Item>
           <Menu.Item key="about">About</Menu.Item>
         </NavLinks>
 
         <RightSection>
-            <SignInButton icon={<UserOutlined/>}>Sign In</SignInButton>
+          <SignInButton icon={<UserOutlined />}>Sign In</SignInButton>
         </RightSection>
       </HeadWrapper>
     </div>
