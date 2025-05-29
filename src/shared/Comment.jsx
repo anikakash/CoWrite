@@ -1,4 +1,5 @@
 import { CalendarOutlined, ClockCircleOutlined } from "@ant-design/icons";
+import { Empty, Typography } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
@@ -28,28 +29,37 @@ const Comment = ({ articleId, userId }) => {
     <Container>
       <Title>Comments ({comments.length})</Title>
       <List>
-        {comments.map((comment) => (
-          <CommentItem key={comment.id}>
-            <UserAvatar src={comment.userAvatar} alt={comment.userName} />
-            <UserInfo>
-              <UserName>
-               <UserTitle>
-                 {comment.userName}{" "}
-                <DateSection>
-                  <ClockCircleOutlined />{" "}
-                  {new Date(comment.createdAt).toLocaleDateString("en-US", {
-                    year: "numeric",
-                    month: "short",
-                    day: "numeric",
-                  })}
-                </DateSection>
-               </UserTitle>
-                <CommentText>{comment.content}</CommentText>
-              </UserName>
-
-            </UserInfo>
-          </CommentItem>
-        ))}
+        {comments.length === 0 ? (
+          <Empty
+            image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
+            styles={{ image: { height: 60 } }}
+            description={
+              <Typography.Text>No Comment Found.</Typography.Text>
+            }
+          />
+        ) : (
+          comments.map((comment) => (
+            <CommentItem key={comment.id}>
+              <UserAvatar src={comment.userAvatar} alt={comment.userName} />
+              <UserInfo>
+                <UserName>
+                  <UserTitle>
+                    {comment.userName}{" "}
+                    <DateSection>
+                      <ClockCircleOutlined />{" "}
+                      {new Date(comment.createdAt).toLocaleDateString("en-US", {
+                        year: "numeric",
+                        month: "short",
+                        day: "numeric",
+                      })}
+                    </DateSection>
+                  </UserTitle>
+                  <CommentText>{comment.content}</CommentText>
+                </UserName>
+              </UserInfo>
+            </CommentItem>
+          ))
+        )}
       </List>
     </Container>
   );
@@ -57,9 +67,7 @@ const Comment = ({ articleId, userId }) => {
 
 export default Comment;
 
-const Container = styled.div`
-
-`;
+const Container = styled.div``;
 
 const Title = styled.h3`
   font-size: 20px;
