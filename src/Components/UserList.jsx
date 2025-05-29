@@ -1,6 +1,17 @@
 import { useEffect, useState } from "react";
 import { EditOutlined } from "@ant-design/icons";
-import { Avatar, Card, Pagination, Tag, Row, Col } from "antd";
+import {
+  Avatar,
+  Card,
+  Pagination,
+  Tag,
+  Row,
+  Col,
+  Empty,
+  Typography,
+  message,
+  Button,
+} from "antd";
 import axios from "axios";
 import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
@@ -12,14 +23,6 @@ const Container = styled.div`
   padding: 20px;
 `;
 
-const CardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: flex-start;
-  padding: 20px;
-`;
-
 const PagenationWrapper = styled.div`
   align-self: flex-end;
   margin: 16px 20px 20px 0;
@@ -28,55 +31,70 @@ const PagenationWrapper = styled.div`
 
 const UserCard = styled(Card)`
   width: 400px;
+  margin: 5px;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 `;
 
-// Component
 const UserList = () => {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
+  const [totalUsers, setTotalUsers] = useState(0);
 
   useEffect(() => {
-    const getUsers = async () => {
+    const fetchUsers = async () => {
+      setLoading(true);
+      
       try {
-        // Simulate delay (optional)
-        setTimeout(() => {}, 6000);
-        const res = await axios.get("http://localhost:8000/users");
-        console.log(res.data);
+        const res = await axios.get("http://localhost:8000/users", {
+          params: {
+            _page: currentPage,
+            _limit: pageSize,
+          },
+        });
         setUsers(res.data);
+        setTotalUsers(Number(res.headers["x-total-count"]));
       } catch (err) {
-        console.error("Error fetching users:", err);
+        
+        message.error(err.message);
+        
       } finally {
         setLoading(false);
       }
     };
-    getUsers();
-  }, []);
 
-  const startIndex = (currentPage - 1) * pageSize;
-  const endIndex = startIndex + pageSize;
-  const currentUsers = users.slice(startIndex, endIndex);
+    fetchUsers();
+  }, [currentPage, pageSize]);
 
-  const onShowSizeChanger = (current, sz) => {
-    setPageSize(sz);
+  const onShowSizeChanger = (current, size) => {
+    setPageSize(size);
+    setCurrentPage(1); 
   };
 
   return (
     <Container>
       <HeadingDivider title="Discover Authors" />
-   
 
       <Row gutter={[24, 24]}>
-        {loading
-          ? Array.from({ length: 6 }).map((_, index) => (
-              <UserCard key={index} loading={true} />
-            ))
-          : currentUsers.map((user) => (
-              <Col key={user.id} xs={24} sm={12} md={8} lg={6}>
-                <Link to={`/users/${user.id}`}>
-                <Card key={user.id} hoverable>
+        {loading ? (
+          Array.from({ length: 6 }).map((_, index) => (
+            <UserCard key={index} loading={true} />
+          ))
+        ) : users.length === 0 ? (
+          <Empty
+            image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
+            styles={{ image: { height: 60 } }}
+            description={
+              <Typography.Text>No Authors Data Found.</Typography.Text>
+            }
+          />
+          
+        ) : (
+          users.map((user) => (
+            <Col key={user.id} xs={24} sm={12} md={8} lg={6}>
+              <Link to={`/users/${user.id}`}>
+                <Card hoverable>
                   <Card.Meta
                     avatar={
                       <Avatar src={`https://i.pravatar.cc/150?u=${user.id}`} />
@@ -96,20 +114,23 @@ const UserList = () => {
                     }
                   />
                 </Card>
-                </Link>
-              </Col>
-            ))}
+              </Link>
+            </Col>
+          ))
+        )}
       </Row>
 
       <PagenationWrapper>
-        <Pagination
-          current={currentPage}
-          pageSize={pageSize}
-          total={users.length}
-          onChange={(page) => setCurrentPage(page)}
-          showSizeChanger
-          onShowSizeChange={onShowSizeChanger}
-        />
+        {users.length && (
+          <Pagination
+            current={currentPage}
+            pageSize={pageSize}
+            total={totalUsers}
+            onChange={(page) => setCurrentPage(page)}
+            showSizeChanger
+            onShowSizeChange={onShowSizeChanger}
+          />
+        )}
       </PagenationWrapper>
     </Container>
   );
