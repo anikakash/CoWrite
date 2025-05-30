@@ -1,21 +1,11 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { EditOutlined } from "@ant-design/icons";
-import {
-  Avatar,
-  Card,
-  Pagination,
-  Tag,
-  Row,
-  Col,
-  Empty,
-  Typography,
-  message,
-  Button,
-} from "antd";
-import axios from "axios";
+import { Avatar, Card, Pagination, Tag, Row, Col, message } from "antd";
 import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
 import { Link } from "react-router-dom";
+import { getAllUser } from "../Hooks/api";
+import NoData from "../shared/NoData";
 
 const Container = styled.div`
   display: flex;
@@ -36,41 +26,21 @@ const UserCard = styled(Card)`
 `;
 
 const UserList = () => {
-  const [users, setUsers] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
-  const [totalUsers, setTotalUsers] = useState(0);
+  const { users, totalUsers, loading, error } = getAllUser(
+    currentPage,
+    pageSize
+  );
 
-  useEffect(() => {
-    const fetchUsers = async () => {
-      setLoading(true);
-      
-      try {
-        const res = await axios.get("http://localhost:8000/users", {
-          params: {
-            _page: currentPage,
-            _limit: pageSize,
-          },
-        });
-        setUsers(res.data);
-        setTotalUsers(Number(res.headers["x-total-count"]));
-      } catch (err) {
-        
-        message.error(err.message);
-        
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchUsers();
-  }, [currentPage, pageSize]);
-
-  const onShowSizeChanger = (current, size) => {
+  const onShowSizeChanger = (_, size) => {
     setPageSize(size);
-    setCurrentPage(1); 
+    setCurrentPage(1);
   };
+
+  if (error) {
+    message.error(error);
+  }
 
   return (
     <Container>
@@ -82,14 +52,7 @@ const UserList = () => {
             <UserCard key={index} loading={true} />
           ))
         ) : users.length === 0 ? (
-          <Empty
-            image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
-            styles={{ image: { height: 60 } }}
-            description={
-              <Typography.Text>No Authors Data Found.</Typography.Text>
-            }
-          />
-          
+          <NoData description="No Authors Data Found." />
         ) : (
           users.map((user) => (
             <Col key={user.id} xs={24} sm={12} md={8} lg={6}>
@@ -119,9 +82,8 @@ const UserList = () => {
           ))
         )}
       </Row>
-
       <PagenationWrapper>
-        {users.length && (
+        {users.length > 0 && (
           <Pagination
             current={currentPage}
             pageSize={pageSize}
@@ -135,5 +97,4 @@ const UserList = () => {
     </Container>
   );
 };
-
 export default UserList;
