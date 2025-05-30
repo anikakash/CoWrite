@@ -4,7 +4,7 @@ import { Avatar, Card, Pagination, Tag, Row, Col, message } from "antd";
 import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
 import { Link } from "react-router-dom";
-import { getAllUser } from "../Hooks/api";
+import { useGetAllUser } from "../Hooks/api";
 import NoData from "../shared/NoData";
 
 const Container = styled.div`
@@ -28,7 +28,7 @@ const UserCard = styled(Card)`
 const UserList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [pageSize, setPageSize] = useState(10);
-  const { users, totalUsers, loading, error } = getAllUser(
+  const { users, totalUsers, loading, error } = useGetAllUser(
     currentPage,
     pageSize
   );
