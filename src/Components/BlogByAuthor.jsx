@@ -6,6 +6,7 @@ import { CalendarOutlined, CommentOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useGetBlogByAuthor } from "../Hooks/api";
+import NoData from "../shared/NoData";
 
 const Container = styled.div`
   display: flex;
@@ -47,11 +48,7 @@ const BlogByAuthor = ({ id }) => {
             </Col>
           ))
         ) : recentBlog.length === 0 ? (
-          <Empty
-            image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
-            styles={{ image: { height: 60 } }}
-            description={<Typography.Text>No Artical Found.</Typography.Text>}
-          />
+          <NoData description="No Articl Found."/>
         ) : (
           recentBlog.map((blog) => (
             <Col key={blog.id} xs={24} sm={12} md={8} lg={6}>
