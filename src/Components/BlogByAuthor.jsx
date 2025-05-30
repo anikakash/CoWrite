@@ -5,6 +5,7 @@ import { Card, Row, Col, Empty, Typography } from "antd";
 import { CalendarOutlined, CommentOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useGetBlogByAuthor } from "../Hooks/api";
 
 const Container = styled.div`
   display: flex;
@@ -34,27 +35,7 @@ const Footer = styled.div`
 `;
 
 const BlogByAuthor = ({ id }) => {
-  const [recentBlog, setRecentBlog] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const getRecentArticles = async () => {
-      try {
-        const res = await axios.get(
-          `http://localhost:8000/articals?userId=${id}`
-        );
-        setRecentBlog(res.data);
-        console.log(res.data);
-        console.log("Author ID: ", id);
-      } catch (err) {
-        console.log("Error fetching recent articles: ", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    getRecentArticles();
-  }, []);
-
+  const {recentBlog, loading} = useGetBlogByAuthor(id);
   return (
     <Container>
       <HeadingDivider title="Recent Articles" />
