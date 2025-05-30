@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
-import { Card, Row, Col, Empty, Typography  } from "antd";
+import { Card, Row, Col, message, Select } from "antd";
 import { CalendarOutlined, CommentOutlined } from "@ant-design/icons";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { useGetBlog } from "../Hooks/api";
+import NoData from "../shared/NoData";
 
 const Container = styled.div`
   display: flex;
@@ -33,46 +35,52 @@ const Footer = styled.div`
   margin-top: 10px;
 `;
 
-const BlogCard = () => {
-  const [recentBlog, setRecentBlog] = useState([]);
-  const [loading, setLoading] = useState(true);
+const SortBlog = styled(Select)`
+  width: 200px;
+  margin-top: 0;
+  margin-bottom: 7px;
+`;
 
-  useEffect(() => {
-    const getRecentArticles = async () => {
-      try {
-        const res = await axios.get(
-          "http://localhost:8000/articals?_sort=createdAt&_order=desc&_limit=10"
-        );
-        setRecentBlog(res.data);
-      } catch (err) {
-        console.log("Error fetching recent articles: ", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-    getRecentArticles();
-  }, []);
+const BlogCard = () => {
+  const [sortedValue, setSortedValue] = useState("publishedDate");
+  const onChange = (value) => {
+    setSortedValue(value);
+  };
+
+  const { recentBlog, loading, error } = useGetBlog(sortedValue);
+   if (error) {
+    message.error(error);
+  }
 
   return (
     <Container>
       <HeadingDivider title="Recent Articles" />
+      <SortBlog
+        value={sortedValue}
+        optionFilterProp="label"
+        onChange={onChange}
+        options={[
+          {
+            value: "publishedDate",
+            label: "Date",
+          },
+          {
+            value: "readCount",
+            label: "Populrity",
+          },
+        ]}
+      />
+
+      
       <Row gutter={[24, 24]}>
         {loading ? (
           Array.from({ length: 6 }).map((_, index) => (
             <Col key={index} xs={24} sm={12} md={8} lg={6}>
-              <Card loading={true}/>
+              <Card loading={true} />
             </Col>
           ))
         ) : recentBlog.length === 0 ? (
-          <Empty
-            image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
-            styles={{ image: { height: 60 } }}
-            description={
-              <Typography.Text>
-                No Users Data Found.
-              </Typography.Text>
-            }
-          />
+          <NoData description="No Blog Found."/>
         ) : (
           recentBlog.map((blog) => (
             <Col key={blog.id} xs={24} sm={12} md={8} lg={6}>
