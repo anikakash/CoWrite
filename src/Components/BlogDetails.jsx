@@ -1,38 +1,14 @@
 import { CalendarOutlined, EyeOutlined } from "@ant-design/icons";
 import { Avatar } from "antd";
-import axios from "axios";
-import { useEffect, useState } from "react";
 import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
 import Comment from "../shared/Comment";
 import { Link, useParams } from "react-router-dom";
+import { useGetBlogDetails } from "../Hooks/api";
 
 const BlogDetails = () => {
-  const [blog, setBlog] = useState({});
-  const [user, setUser] = useState({});
-  const [loading, setLoading] = useState(true);
   const { id } = useParams();
-
-  useEffect(() => {
-    const getBlog = async () => {
-      try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        const res = await axios.get(`http://localhost:8000/articals/${id}`);
-        setBlog(res.data);
-
-        const userRes = await axios.get(
-          `http://localhost:8000/users/${res.data.userId}`
-        );
-        setUser(userRes.data);
-      } catch (err) {
-        console.error("Error fetching blog or user:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    getBlog();
-  }, []);
+  const {blog, user, loading, error} = useGetBlogDetails(id);
 
   if (loading) {
     return (
