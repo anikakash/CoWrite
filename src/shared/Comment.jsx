@@ -3,27 +3,10 @@ import { Empty, Typography } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import { useGetComment } from "../Hooks/api";
 
 const Comment = ({ articleId, userId }) => {
-  const [comments, setComments] = useState([]);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const getComment = async () => {
-      try {
-        const res = await axios.get(
-          `http://localhost:8000/comments?userId=${userId}&articleId=${articleId}`
-        );
-        setComments(res.data);
-      } catch (err) {
-        console.log("Error fetching comments: ", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    getComment();
-  }, [articleId, userId]);
+  const {comments, loading} = useGetComment(articleId, userId);
 
   return (
     <Container>
