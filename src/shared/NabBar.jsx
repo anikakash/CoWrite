@@ -4,15 +4,18 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeadWrapper = styled.div`
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
-  background-color: #f9fafb;
-  margin: 20px auto;
-  border: 2px solid #abc6e2;
-  padding: 7px;
-  height: 43px;
-  border-radius: 7px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 11px 60px;
+    height: 43px;
+    border-radius: 62px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    width: 90%;
 `;
 
 const NavLinks = styled(Menu)`
@@ -54,7 +57,7 @@ const SignInButton = styled(Button)`
 
 const NabBar = () => {
   return (
-    <div>
+    <>
       <HeadWrapper>
         <Link to="/" style={{ textDecoration: "none", color: "inherit", display: "inline-block" }}>
           <Logo>
@@ -74,7 +77,7 @@ const NabBar = () => {
           <SignInButton icon={<UserOutlined />}>Sign In</SignInButton>
         </RightSection>
       </HeadWrapper>
-    </div>
+    </>
   );
 };
 

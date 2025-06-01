@@ -14,6 +14,8 @@ const fetchData = async (url, params = {}) => {
   }
 };
 
+const userCache = {};
+const CACHE_DURATION = 5 * 60 * 1000;
 export const useGetAllUser = (currentPage, pageSize) => {
   const [users, setUsers] = useState([]);
   const [totalUsers, setTotalUsers] = useState(0);
@@ -21,6 +23,17 @@ export const useGetAllUser = (currentPage, pageSize) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    const cacheKey = `page_${currentPage}_limit_${pageSize}`;
+    const now = Date.now();
+
+    const cached = userCache[cacheKey];
+    if (cached && now - cached.timestamp < CACHE_DURATION) {
+      setUsers(cached.data);
+      setTotalUsers(cached.total);
+      setLoading(false);
+      return;
+    }
+
     const fetchUsers = async () => {
       setLoading(true);
       setError(null);
@@ -29,8 +42,16 @@ export const useGetAllUser = (currentPage, pageSize) => {
           _page: currentPage,
           _limit: pageSize,
         });
-        setUsers(res.data);
-        setTotalUsers(Number(res.headers["x-total-count"]));
+        const data = res.data;
+        const total = Number(res.headers["x-total-count"]);
+
+        setUsers(data);
+        setTotalUsers(total);
+        userCache[cacheKey] = {
+          data,
+          total,
+          timestamp: Date.now(),
+        };
       } catch (err) {
         setError(err.message);
       } finally {
@@ -95,18 +116,17 @@ export const useGetBlog = (sortedValue) => {
     getRecentArticles();
   }, [sortedValue]);
 
-  return {recentBlog, loading, error}
+  return { recentBlog, loading, error };
 };
 
-
-export const useGetBlogByAuthor =  (id) =>{
- const [recentBlog, setRecentBlog] = useState([]);
+export const useGetBlogByAuthor = (id) => {
+  const [recentBlog, setRecentBlog] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const getRecentArticles = async () => {
       setLoading(true);
       try {
-        const res = await api.get(`/articals?userId=${id}`)
+        const res = await api.get(`/articals?userId=${id}`);
         setRecentBlog(res.data);
         console.log(res.data);
         console.log("Author ID: ", id);
@@ -118,20 +138,19 @@ export const useGetBlogByAuthor =  (id) =>{
     };
     getRecentArticles();
   }, [id]);
-  return {recentBlog, loading};
-}
+  return { recentBlog, loading };
+};
 
-export const useGetComment = ( articleId, userId)=>{
-const [comments, setComments] = useState([]);
+export const useGetComment = (articleId, userId) => {
+  const [comments, setComments] = useState([]);
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     const getComment = async () => {
       try {
-        const res = await fetchData(`/comments`,{
+        const res = await fetchData(`/comments`, {
           userId: userId,
-articleId: articleId,
-
-        })
+          articleId: articleId,
+        });
         setComments(res.data);
       } catch (err) {
         console.log("Error fetching comments: ", err);
@@ -143,5 +162,5 @@ articleId: articleId,
     getComment();
   }, [articleId, userId]);
 
-  return {comments, loading};
-}
+  return { comments, loading };
+};
