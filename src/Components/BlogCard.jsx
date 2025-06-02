@@ -3,7 +3,6 @@ import styled from "styled-components";
 import HeadingDivider from "../shared/HeadingDivider";
 import { Card, Row, Col, message, Select } from "antd";
 import { CalendarOutlined, CommentOutlined } from "@ant-design/icons";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import { useGetBlog } from "../Hooks/api";
 import NoData from "../shared/NoData";
