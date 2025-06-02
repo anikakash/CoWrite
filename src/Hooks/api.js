@@ -3,3 +3,4 @@ export { default as useGetBlogDetails } from "./useGetBlogDetails";
 export { default as useGetBlog } from "./useGetBlog";
 export { default as useGetBlogByAuthor } from "./useGetBlogByAuthor";
 export { default as useGetComment } from "./useGetComment";
+export {default as useGetAuthor} from "./useGetAuthor"

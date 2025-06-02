@@ -6,26 +6,11 @@ import { EditOutlined } from "@ant-design/icons";
 import HeadingDivider from "../shared/HeadingDivider";
 import { useParams } from "react-router-dom";
 import BlogByAuthor from "./BlogByAuthor";
+import { useGetAuthor } from "../Hooks/api";
 
 const AuthorProfile = () => {
-  const [author, setAuthor] = useState({});
-  const [loading, setLoading] = useState(true);
-const { id } = useParams();
-  useEffect(() => {
-    const getAuthor = async () => {
-      try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        const res = await axios.get(`http://localhost:8000/users/${id}`);
-        setAuthor(res.data);
-      } catch (err) {
-        console.error("Error fetching author:", err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    getAuthor();
-  }, [id]);
+  const { id } = useParams();
+  const { data, isLoading, isError, error } = useGetAuthor(id);
 
   return (
     <Container>
@@ -34,7 +19,7 @@ const { id } = useParams();
       <Row gutter={[24, 24]}>
         <Col xs={24} sm={12} md={8} lg={6}>
           <CardWrapper>
-            {loading ? (
+            {isLoading ? (
               Array.from({ length: 1 }).map((_, index) => (
                 <Card key={index} loading={true} style={{ border: "0px" }} />
               ))
@@ -42,33 +27,33 @@ const { id } = useParams();
               <ProfileCard>
                 <AvatarSection>
                   <Avatar
-                    src={`https://i.pravatar.cc/150?u=${author.id}`}
+                    src={`https://i.pravatar.cc/150?u=${data.id}`}
                     size={48}
                   />
                   <div className="info">
-                    <h3>{author.name}</h3>
+                    <h3>{data.name}</h3>
                     <p>
                       <EditOutlined style={{ marginRight: 5 }} />
-                      {author.numberOfArticles} Articles
+                      {data.numberOfArticles} Articles
                     </p>
                   </div>
                 </AvatarSection>
                 <TagList>
-                  {author.stack.map((skill, index) => (
+                  {data.stack.map((skill, index) => (
                     <Tag color="green" key={index}>
                       {skill}
                     </Tag>
                   ))}
                 </TagList>
                 <DescriptionSection>
-                  <p>{author.bio}</p>
+                  <p>{data.bio}</p>
                 </DescriptionSection>
               </ProfileCard>
             )}
           </CardWrapper>
         </Col>
       </Row>
-      {author?.id && <BlogByAuthor id={author.id} />}
+      {data?.id && <BlogByAuthor userId={data.id} />}
     </Container>
   );
 };

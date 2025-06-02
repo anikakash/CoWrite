@@ -1,32 +1,43 @@
-import { useEffect, useState } from "react";
-import api  from "./apiClient";
+import { useQuery } from "@tanstack/react-query";
+import api from "./apiClient";
+
+const fetchBlog = async (id) => {
+  const res = await api.get(`/articals/${id}`);
+  return res.data;
+};
+
+const fetchUser = async (userId) => {
+  const res = await api.get(`/users/${userId}`);
+  return res.data;
+};
 
 const useGetBlogDetails = (id) => {
-  const [blog, setBlog] = useState({});
-  const [user, setUser] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  useEffect(() => {
-    const getBlog = async () => {
-      try {
-        await new Promise((resolve) => setTimeout(resolve, 1000));
-        const res = await api.get(`/articals/${id}`);
-        setBlog(res.data);
+  const {
+    data: blog,
+    isLoading: blogLoading,
+    error: blogError,
+  } = useQuery({
+    queryKey: ["blog", id],
+    queryFn: () => fetchBlog(id),
+    enabled: !!id,
+  });
 
-        const userRes = await api.get(`/users/${res.data.userId}`);
+  const {
+    data: user,
+    isLoading: userLoading,
+    error: userError,
+  } = useQuery({
+    queryKey: ["user", blog?.userId],
+    queryFn: () => fetchUser(blog.userId),
+    enabled: !!blog?.userId,
+  });
 
-        setUser(userRes.data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    getBlog();
-  }, [id]);
-
-  return { blog, user, loading, error };
+  return {
+    blog,
+    user,
+    loading: blogLoading || userLoading,
+    error: blogError || userError,
+  };
 };
 
 export default useGetBlogDetails;

@@ -1,30 +1,21 @@
-import { useEffect, useState } from "react";
 import { fetchData } from "./apiClient";
+import { useQuery } from "@tanstack/react-query";
 
 const useGetBlog = (sortedValue) => {
-  const [recentBlog, setRecentBlog] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  useEffect(() => {
-    const getRecentArticles = async () => {
-      setLoading(true);
-      try {
-        const res = await fetchData("/articals", {
-          _sort: sortedValue,
-          _order: "desc",
-          _limit: 10,
-        });
-        setRecentBlog(res.data);
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-    getRecentArticles();
-  }, [sortedValue]);
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["articles", sortedValue],
+    queryFn: async () => {
+      const response = await fetchData("/articals", {
+        _sort: sortedValue,
+        _order: "desc",
+        _limit: 10,
+      });
+      return response.data;
+    },
+    staleTime: 5 * 60 * 1000,
+  });
 
-  return { recentBlog, loading, error };
+  return { data, isLoading, isError, error };
 };
 
 export default useGetBlog;

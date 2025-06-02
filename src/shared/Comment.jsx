@@ -6,13 +6,13 @@ import styled from "styled-components";
 import { useGetComment } from "../Hooks/api";
 
 const Comment = ({ articleId, userId }) => {
-  const {comments, loading} = useGetComment(articleId, userId);
+  const { data=[], isLoading, isError, error} = useGetComment(articleId, userId);
 
   return (
     <Container>
-      <Title>Comments ({comments.length})</Title>
+      <Title>Comments ({data.length})</Title>
       <List>
-        {comments.length === 0 ? (
+        {data.length === 0 ? (
           <Empty
             image="https://gw.alipayobjects.com/zos/antfincdn/ZHrcdLPrvN/empty.svg"
             styles={{ image: { height: 60 } }}
@@ -21,7 +21,7 @@ const Comment = ({ articleId, userId }) => {
             }
           />
         ) : (
-          comments.map((comment) => (
+          data.map((comment) => (
             <CommentItem key={comment.id}>
               <UserAvatar src={comment.userAvatar} alt={comment.userName} />
               <UserInfo>

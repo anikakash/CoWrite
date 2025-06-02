@@ -46,8 +46,8 @@ const BlogCard = () => {
     setSortedValue(value);
   };
 
-  const { recentBlog, loading, error } = useGetBlog(sortedValue);
-   if (error) {
+  const { data = [], isLoading, isError, error } = useGetBlog(sortedValue);
+   if (isError && error) {
     message.error(error);
   }
 
@@ -72,16 +72,16 @@ const BlogCard = () => {
 
       
       <Row gutter={[24, 24]}>
-        {loading ? (
+        {isLoading ? (
           Array.from({ length: 6 }).map((_, index) => (
             <Col key={index} xs={24} sm={12} md={8} lg={6}>
               <Card loading={true} />
             </Col>
           ))
-        ) : recentBlog.length === 0 ? (
+        ) : data.length === 0 ? (
           <NoData description="No Blog Found."/>
         ) : (
-          recentBlog.map((blog) => (
+          data.map((blog) => (
             <Col key={blog.id} xs={24} sm={12} md={8} lg={6}>
               <Link to={`/articles/${blog.id}`}>
                 <Card

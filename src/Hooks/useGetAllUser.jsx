@@ -1,56 +1,38 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 import { fetchData } from "./apiClient";
 
-const userCache = {};
-const CACHE_DURATION = 5 * 60 * 1000;
-const useGetAllUser = (currentPage, pageSize) => {
-  const [users, setUsers] = useState([]);
-  const [totalUsers, setTotalUsers] = useState(0);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+const fetchUsers = async ({ pageParam }) => {
+  const { currentPage, pageSize } = pageParam;
+  const res = await fetchData("/users", {
+    _page: currentPage,
+    _limit: pageSize,
+  });
 
-  useEffect(() => {
-    const cacheKey = `page_${currentPage}_limit_${pageSize}`;
-    const now = Date.now();
+  const data = res.data;
+  const total = Number(res.headers["x-total-count"]);
 
-    const cached = userCache[cacheKey];
-    if (cached && now - cached.timestamp < CACHE_DURATION) {
-      setUsers(cached.data);
-      setTotalUsers(cached.total);
-      setLoading(false);
-      return;
-    }
-
-    const fetchUsers = async () => {
-      setLoading(true);
-      setError(null);
-      try {
-        const res = await fetchData("/users", {
-          _page: currentPage,
-          _limit: pageSize,
-        });
-        const data = res.data;
-        const total = Number(res.headers["x-total-count"]);
-
-        setUsers(data);
-        setTotalUsers(total);
-        userCache[cacheKey] = {
-          data,
-          total,
-          timestamp: Date.now(),
-        };
-      } catch (err) {
-        setError(err.message);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    fetchUsers();
-  }, [currentPage, pageSize]);
-
-  return { users, totalUsers, loading, error };
+  return { data, total };
 };
 
+const useGetAllUser = (currentPage, pageSize) => {
+  const {
+    data,
+    isLoading: loading,
+    isError,
+    error,
+  } = useQuery({
+    queryKey: ["users", currentPage, pageSize],
+    queryFn: () => fetchUsers({ pageParam: { currentPage, pageSize } }),
+    keepPreviousData: true, // keeps old data while fetching new
+    staleTime: 5 * 60 * 1000, // same as your old CACHE_DURATION (5 min)
+  });
+
+  return {
+    users: data?.data || [],
+    totalUsers: data?.total || 0,
+    loading,
+    error: isError ? error.message : null,
+  };
+};
 
 export default useGetAllUser;

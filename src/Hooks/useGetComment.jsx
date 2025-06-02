@@ -1,28 +1,19 @@
-import { useEffect, useState } from "react";
 import { fetchData } from "./apiClient";
+import { useQuery } from "@tanstack/react-query";
 
 const useGetComment = (articleId, userId) => {
-  const [comments, setComments] = useState([]);
-  const [loading, setLoading] = useState(true);
-  useEffect(() => {
-    const getComment = async () => {
-      try {
-        const res = await fetchData(`/comments`, {
-          userId: userId,
-          articleId: articleId,
-        });
-        setComments(res.data);
-      } catch (err) {
-        console.log("Error fetching comments: ", err);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["comments", articleId, userId],
+    queryFn: async () => {
+      const response = await await fetchData(`/comments`, {
+        userId: userId,
+        articleId: articleId,
+      });
+      return response.data;
+    },
+  });
 
-    getComment();
-  }, [articleId, userId]);
-
-  return { comments, loading };
+  return { data, isLoading, isError, error};
 };
 
 export default useGetComment;

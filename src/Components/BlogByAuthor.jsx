@@ -35,8 +35,8 @@ const Footer = styled.div`
   margin-top: 10px;
 `;
 
-const BlogByAuthor = ({ id }) => {
-  const {recentBlog, loading} = useGetBlogByAuthor(id);
+const BlogByAuthor = ({ userId }) => {
+  const {data=[], loading} = useGetBlogByAuthor(userId);
   return (
     <Container>
       <HeadingDivider title="Recent Articles" />
@@ -47,10 +47,10 @@ const BlogByAuthor = ({ id }) => {
               <Card loading={true} />
             </Col>
           ))
-        ) : recentBlog.length === 0 ? (
+        ) : data.length === 0 ? (
           <NoData description="No Articl Found."/>
         ) : (
-          recentBlog.map((blog) => (
+          data.map((blog) => (
             <Col key={blog.id} xs={24} sm={12} md={8} lg={6}>
               <Link to={`/articles/${blog.id}`}>
                 <Card
